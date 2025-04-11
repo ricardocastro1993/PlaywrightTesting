@@ -28,7 +28,7 @@ public class SignUpPageTest {
 	@BeforeClass
 	void launchBrowser() {
 		playwright = Playwright.create();
-		browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false));
+		browser = playwright.chromium().launch();
 	}
 
 	@AfterClass
